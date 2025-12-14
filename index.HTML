@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2ad7a1a42d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/Gemini-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Technical Skills</a></li>
+                    <li><a href="#OngoingProjects" onclick="closemenu()">Ongoing Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Game Developer</p>
+                <h1>Hi, I'm <span>Sugumar</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about----------- --->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/aesthetic-anime-character-gaming.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate game developer with experience in creating both 2D and 3D games
+                        using Unity. I have good knowledge of Blender for 3D modeling and asset creation.
+                        I enjoy designing gameplay mechanics, building game environments, and learning 
+                        new technologies to improve my game development skills.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Unity Engine</span><br>creating both 2D and 3D games using Unity</li>
+                                <li><span>Blender</span><br>3D modeling and asset creation</li>
+                                <li><span>Web Development</span><br>Web App development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020</span><br>I completed my Secondary School (10th standard) in 2020.</li>
+                                <li><span>2022</span><br>I completed my Higher Secondary (12th standard) in 2022.</li>
+                                <li><span>2022-2026</span><br>I am currently pursuing a Bachelor of Engineering in Electronics and Communication
+                                at Park College of Engineering and Technology. I am a final-year student.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="hobbies">
+                            <ul>
+                                <li><span>Hobbies</span><br>Playing hockey
+                                , Reading story books
+                                , Playing and analyzing video games
+                                , Creating 3D models using Blender
+                                , Developing 2D and 3D games in Unity</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------services--------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Technical Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game Development</h2>
+                    <p>Created 2D or 3D games using Unity</p> 
+                    <p>Developed player movement, animations, or UI systems</p>
+                    <p>Completed personal or academic game projects</p>
+                    <p>Built games from idea to playable prototype</p>
+                    <a href="#">Learn more</a>
+                </div>
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>3D & Asset Services</h2>
+                    <p>3D Modeling using Blender</p> 
+                    <p>Game Asset Creation & Optimization</p>
+                    <p>Importing & Integrating Assets into Unity</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Support & Learning</h2>
+                    <p>Game Prototyping</p> 
+                    <p>Bug Fixing & Basic Optimization</p>
+                    <p>Game Projects Support</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---- -------------------portfolio----------------- ----- -->
+     <div id="OngoingProjects">
+        <div class="container">
+            <h1 class="sub-title">Ongoing Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/games.webp">
+                    <div class="layer">
+                        <h3>Battle for Survival</h3>
+                        <p>More Adventures Coming Soon</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/very.jpg">
+                    <div class="layer">
+                        <h3>coming soon</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/blue.jpg">
+                    <div class="layer">
+                        <h3>coming soon</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- ----------------contact---------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>msugumar930@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8098863337</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1aZvG9d7ZG/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@SugumarM-w1j"><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sugumar809886?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/resume (1).pdf" download class="btn btn2">Download resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Sugumar M. All rights reserved.</p>
+            <p><i class="fa-solid fa-heart"></i>This game and its content are the original work of Sugumar M.
+            <p>Unauthorized copying, modification, or distribution is prohibited.</p>
+        </div>
+      </div>
+    <Script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tapname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tapname).classList.add("active-tab");
+        }
+    </Script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJfDW823t_k_99Pu1zPVe1qw1zxfQqRNkZbTy9a26TqZ40D6lWhkrgiPssNlzE3V3jmQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+</body>
+</html>
